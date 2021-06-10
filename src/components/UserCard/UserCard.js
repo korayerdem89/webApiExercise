@@ -23,9 +23,9 @@ const styles = StyleSheet.create({
   },
   email: {fontSize: 12, fontStyle: 'italic', color: 'gray'},
   username: {fontWeight: 'bold'},
-  inner_container:{
-    flexDirection:'row',
+  inner_container: {
+    flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems:'center'
-  }
+    alignItems: 'center',
+  },
 });

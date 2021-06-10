@@ -10,9 +10,15 @@ const App = () => {
   const [userList, setUserList] = useState([]);
 
   async function fetchData() {
-    const response = await axios.get(URL);
-    setLoading(false);
-    setUserList(response.data);
+    // const response = await axios.get(URL);
+    // setLoading(false);
+    // setUserList(response.data);
+
+    axios.get(URL).then(response => {
+     setLoading(false);
+     setUserList(response.data);
+    })
+    
   }
 
   const renderUser = ({item}) => (
